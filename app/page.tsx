@@ -154,6 +154,8 @@ export default function Home() {
   async function shareResult() {
     if (!result) return;
 
+    const siteUrl = window.location.origin;
+
     const shareText = `🛒 살래말래
 
   ${productName || "이 물건"}: ${result.emoji} ${result.verdict}
@@ -162,7 +164,10 @@ export default function Home() {
   월급 대비 가격: ${result.burden.toFixed(1)}%
   1회 사용 비용: ${Math.round(result.costPerUse).toLocaleString()}원
 
-  "${result.message}"`;
+  "${result.message}"
+
+  너도 판정받아봐 👇
+  ${siteUrl}`;
 
     const isMobile =
       /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -172,10 +177,11 @@ export default function Home() {
         await navigator.share({
           title: "살래말래 판정 결과",
           text: shareText,
+          url: siteUrl,
         });
       } else {
         await navigator.clipboard.writeText(shareText);
-        alert("판정 결과를 복사했어 📋\n카톡이나 SNS에 붙여넣어봐!");
+        alert("판정 결과와 링크를 복사했어 📋\n카톡이나 SNS에 붙여넣어봐!");
       }
     } catch (error) {
       console.error(error);
