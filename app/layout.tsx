@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "살래말래",
   description: "사고 싶은 건 알겠는데, 일단 계산부터 해보자.",
+  verification: {
+    google: "NWrNuIV-7cyS49UCtfS-k8eBkujGoaHyJL0HNxJkj_c",
+  },  
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
