@@ -156,11 +156,11 @@ export default function Home() {
 
     const siteUrl = window.location.origin;
 
-    const shareText = `🛒 살래말래
+    const shareText = `🛑 지름신 억제기
 
   ${productName || "이 물건"}: ${result.emoji} ${result.verdict}
 
-  살래말래 점수: ${result.score}점
+  구매 점수: ${result.score}점
   월급 대비 가격: ${result.burden.toFixed(1)}%
   1회 사용 비용: ${Math.round(result.costPerUse).toLocaleString()}원
 
@@ -175,7 +175,7 @@ export default function Home() {
     try {
       if (isMobile && navigator.share) {
         await navigator.share({
-          title: "살래말래 판정 결과",
+          title: "지름신 억제기 판정 결과",
           text: shareText,
           url: siteUrl,
         });
@@ -192,10 +192,10 @@ export default function Home() {
     <main className="min-h-screen bg-zinc-50 px-5 py-10">
       <div className="mx-auto w-full max-w-md">
         <header className="mb-10 text-center">
-          <div className="mb-3 text-5xl">🛒</div>
+          <div className="mb-3 text-5xl">🛑</div>
 
           <h1 className="text-4xl font-black tracking-tight text-zinc-900">
-            살래말래
+            지름신 억제기
           </h1>
 
           <p className="mt-3 text-base text-zinc-500">
@@ -344,7 +344,7 @@ export default function Home() {
               onClick={judgePurchase}
               className="w-full rounded-2xl bg-zinc-900 py-4 text-lg font-black text-white transition hover:bg-zinc-800"
             >
-              살래말래? 👀
+              지름신을 막아볼까? 👀
             </button>
           </div>
         </section>
@@ -354,7 +354,7 @@ export default function Home() {
             <div className="text-5xl">{result.emoji}</div>
 
             <p className="mt-3 text-sm font-bold text-zinc-400">
-              살래말래 점수 {result.score}점
+              구매 점수 {result.score}점
             </p>
 
             <h2 className="mt-2 text-3xl font-black text-zinc-900">

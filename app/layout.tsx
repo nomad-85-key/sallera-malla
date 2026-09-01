@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "살래말래",
-  description: "사고 싶은 건 알겠는데, 일단 계산부터 해보자.",
+  title: "지름신 억제기 | 이거 사도 될까? 결제 전에 한 번만 돌려봐",
+  description: "결제 버튼 누르기 전에 30초만. 가격, 월급, 사용 빈도를 넣으면 지름신 억제기가 대신 말려드립니다.",
   verification: {
     google: "NWrNuIV-7cyS49UCtfS-k8eBkujGoaHyJL0HNxJkj_c",
   },  
