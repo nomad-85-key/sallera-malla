@@ -218,7 +218,7 @@ export default function Home() {
                 value={productName}
                 onChange={(e) => setProductName(e.target.value)}
                 placeholder="예: 에어팟 프로"
-                className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 text-lg outline-none transition focus:border-zinc-900"
+                className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 text-lg text-zinc-900 placeholder:text-zinc-400 placeholder:opacity-100 outline-none transition focus:border-zinc-400"
               />
             </div>
 
@@ -234,9 +234,9 @@ export default function Home() {
                   value={formatNumber(price)}
                   onChange={(e) => setPrice(e.target.value.replace(/\D/g, ""))}
                   placeholder="180,000"
-                  className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 pr-12 text-lg outline-none transition focus:border-zinc-900"
+                  className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 pr-12 text-lg text-zinc-900 placeholder:text-zinc-400 placeholder:opacity-100 outline-none transition focus:border-zinc-400"
                 />
-                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400">
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-500">
                   원
                 </span>
               </div>
@@ -254,9 +254,9 @@ export default function Home() {
                   value={formatNumber(salary)}
                   onChange={(e) => setSalary(e.target.value.replace(/\D/g, ""))}
                   placeholder="3,500,000"
-                  className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 pr-12 text-lg outline-none transition focus:border-zinc-900"
+                  className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 pr-12 text-lg text-zinc-900 placeholder:text-zinc-400 placeholder:opacity-100 outline-none transition focus:border-zinc-400"
                 />
-                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400">
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-500">
                   원
                 </span>
               </div>
@@ -273,9 +273,9 @@ export default function Home() {
                   value={monthlyUses}
                   onChange={(e) => setMonthlyUses(e.target.value)}
                   placeholder="4"
-                  className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 pr-12 text-lg outline-none transition focus:border-zinc-900"
+                  className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-4 pr-12 text-lg text-zinc-900 placeholder:text-zinc-400 placeholder:opacity-100 outline-none transition focus:border-zinc-400"
                 />
-                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400">
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-500">
                   회
                 </span>
               </div>
