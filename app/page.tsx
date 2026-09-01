@@ -353,7 +353,7 @@ export default function Home() {
           <section className="mt-6 rounded-3xl bg-white p-6 text-center shadow-sm ring-1 ring-zinc-200">
             <div className="text-5xl">{result.emoji}</div>
 
-            <p className="mt-3 text-sm font-bold text-zinc-400">
+            <p className="text-sm font-semibold text-zinc-600">
               구매 점수 {result.score}점
             </p>
 
@@ -366,14 +366,14 @@ export default function Home() {
             <div className="mt-6 grid grid-cols-2 gap-3">
               <div className="rounded-2xl bg-zinc-100 p-4">
                 <p className="text-xs text-zinc-500">월급 대비 가격</p>
-                <p className="mt-1 text-xl font-black">
+                <p className="mt-2 text-2xl font-bold text-zinc-900">
                   {result.burden.toFixed(1)}%
                 </p>
               </div>
 
               <div className="rounded-2xl bg-zinc-100 p-4">
                 <p className="text-xs text-zinc-500">1회 사용 비용</p>
-                <p className="mt-1 text-xl font-black">
+                <p className="mt-2 text-2xl font-bold text-zinc-900">
                   {Math.round(result.costPerUse).toLocaleString()}원
                 </p>
               </div>
